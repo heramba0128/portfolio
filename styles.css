@@ -1,0 +1,182 @@
+/* Global vintage look */
+body {
+  margin: 0;
+  font-family: "Georgia", serif;
+  background-color: #fdf6e3;
+  color: #3e2c1c;
+  line-height: 1.7;
+}
+
+h1, h2, h3 {
+  font-family: "Courier New", monospace;
+  color: #2e1a0f;
+  letter-spacing: 1px;
+}
+
+header {
+  background: #d9cbb3;
+  padding: 1.5rem;
+  border-bottom: 4px solid #a58b6f;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-text {
+  max-width: 70%;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #a58b6f;
+}
+
+.tagline {
+  font-style: italic;
+  color: #6f4e37;
+}
+
+.section {
+  padding: 3rem 1rem;
+  border-bottom: 1px solid #b89f7a;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Timeline (Education) */
+.timeline {
+  position: relative;
+  margin-top: 2rem;
+  padding-left: 30px;
+  border-left: 3px solid #a67c52;
+}
+
+.timeline-item {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -11px;
+  top: 8px;
+  width: 18px;
+  height: 18px;
+  background: #6f4e37;
+  border-radius: 50%;
+  border: 3px solid #fdf6e3;
+}
+
+.timeline-content {
+  background: #f7f1e3;
+  border: 1px solid #b89f7a;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(60, 42, 25, 0.25);
+}
+
+/* Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.skill {
+  background: #f7f1e3;
+  border: 1px solid #b89f7a;
+  padding: 0.8rem;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #f7f1e3;
+  border: 1px solid #b89f7a;
+  padding: 1.2rem;
+  border-radius: 10px;
+  box-shadow: 3px 3px 8px rgba(60, 42, 25, 0.3);
+}
+
+ul {
+  list-style: square;
+  padding-left: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  background: #a67c52;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 1rem;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #6f4e37;
+}
+
+footer {
+  text-align: center;
+  background: #d9cbb3;
+  padding: 1rem;
+  border-top: 4px solid #a58b6f;
+}
+
+
+/* Projects timeline reusing timeline style */
+#projects .timeline {
+  position: relative;
+  margin-top: 2rem;
+  padding-left: 30px;
+  border-left: 3px solid #a67c52;
+}
+
+#projects .timeline-item {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+#projects .timeline-dot {
+  position: absolute;
+  left: -11px;
+  top: 20px;
+  width: 18px;
+  height: 18px;
+  background: #6f4e37;
+  border-radius: 50%;
+  border: 3px solid #fdf6e3;
+}
+
+#projects .timeline-content {
+  background: #f7f1e3;
+  border: 1px solid #b89f7a;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(60, 42, 25, 0.25);
+}
+
+/* Grid for cards inside timeline */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
